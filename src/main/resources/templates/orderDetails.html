@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Order Delivery Details</h1>
+    <form action="#"
+    method="post"
+    data-th-action="@{/pizza/order}"
+    data-th-object="${order}">
+      <div>
+        Name:
+        <input type="text" />
+      </div>
+      <br />
+      <div>
+        Address:
+        <input type="text" />
+      </div>
+      <br />
+      <div>
+        Phone:
+        <input type="text" />
+      </div>
+      <br />
+      <div>
+        Rush:
+        <input type="checkbox" />
+      </div>
+      <br />
+      <div>
+        Comments:
+        <input type="text" />
+      </div>
+      <br />
+      <button type="submit">Place Order</button>
+    </form>
+  </body>
+</html>
